@@ -54,7 +54,7 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-[#D2B48C] text-[#8B4513] text-center p-4 md:p-8">
       <h1 className="text-4xl font-bold mb-6 text-shadow-retro">
-        Welcome to Munch Madness, Aggies
+        Welcome to Munch Madness
       </h1>
 
       <div className="overflow-hidden whitespace-nowrap mb-8">
@@ -89,6 +89,17 @@ export default function Page() {
       </div>
 
       <div className="mt-8">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdKC2MgWfiQEDoxfePLk4sZvkMJ2CO_o5d2TBk-MC-iHqtKhw/viewform?usp=sf_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#CD853F] hover:bg-[#A0522D] text-white font-bold py-2 px-4 border-2 border-[#8B4513] mb-4 rounded"
+        >
+          Click here to submit a deal!
+        </a>
+      </div>
+
+      {/* <div className="mt-8">
         {!showForm ? (
           <button
             className="bg-[#CD853F] hover:bg-[#A0522D] text-white font-bold py-2 px-4 border-2 border-[#8B4513] mb-4 rounded"
@@ -130,7 +141,7 @@ export default function Page() {
             </button>
           </div>
         )}
-      </div>
+      </div> */}
 
       <footer className="mt-12 text-sm">
         <p>Made with ❤️ by Borna</p>
