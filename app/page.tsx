@@ -31,30 +31,10 @@ const initialDeals: Deal[] = [
     deal: "$1 Thai Tea",
     day: "Everyday",
   },
-  { restaurant: "Blaze Pizza", deal: "$1 Fountain Drink", day: "Everyday" },
 ];
 
 export default function Page() {
-  const [deals, setDeals] = useState<Deal[]>(initialDeals);
-  const [newDeal, setNewDeal] = useState<Deal>({
-    restaurant: "",
-    deal: "",
-    day: "",
-  });
-  const [showForm, setShowForm] = useState(false);
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setNewDeal((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const addDeal = () => {
-    if (newDeal.restaurant && newDeal.deal && newDeal.day) {
-      setDeals((prev) => [...prev, newDeal]);
-      setNewDeal({ restaurant: "", deal: "", day: "" });
-      setShowForm(false);
-    }
-  };
+  const [deals] = useState<Deal[]>(initialDeals);
 
   return (
     <div className="min-h-screen bg-[#D2B48C] text-[#8B4513] text-center p-4 md:p-8">
@@ -103,51 +83,6 @@ export default function Page() {
           Click here to submit a deal!
         </a>
       </div>
-
-      {/* <div className="mt-8">
-        {!showForm ? (
-          <button
-            className="bg-[#CD853F] hover:bg-[#A0522D] text-white font-bold py-2 px-4 border-2 border-[#8B4513] mb-4 rounded"
-            onClick={() => setShowForm(true)}
-          >
-            Click here to add a deal!
-          </button>
-        ) : (
-          <div className="mb-8 p-4 bg-[#FFE4B5] border-4 border-[#5D4037] rounded-lg">
-            <input
-              type="text"
-              name="restaurant"
-              value={newDeal.restaurant}
-              onChange={handleInputChange}
-              placeholder="Restaurant Name"
-              className="mb-2 p-2 w-full border border-[#8B4513] rounded"
-            />
-            <input
-              type="text"
-              name="deal"
-              value={newDeal.deal}
-              onChange={handleInputChange}
-              placeholder="Deal Details"
-              className="mb-2 p-2 w-full border border-[#8B4513] rounded"
-            />
-            <input
-              type="text"
-              name="day"
-              value={newDeal.day}
-              onChange={handleInputChange}
-              placeholder="Valid Days"
-              className="mb-2 p-2 w-full border border-[#8B4513] rounded"
-            />
-            <button
-              onClick={addDeal}
-              className="bg-[#CD853F] hover:bg-[#A0522D] text-white font-bold py-2 px-4 border-2 border-[#8B4513] rounded"
-            >
-              Add Deal
-            </button>
-          </div>
-        )}
-      </div> */}
-
       <footer className="mt-12 text-sm">
         <p>Made with ❤️ by Borna</p>
       </footer>
