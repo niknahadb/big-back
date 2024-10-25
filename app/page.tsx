@@ -31,6 +31,11 @@ const initialDeals: Deal[] = [
     deal: "$1 Thai Tea",
     day: "Everyday",
   },
+  {
+    restaurant: "Village Pizza & Pints",
+    deal: "$9 lunch special (includes mini pizza, salad or fries, and fountain drink)",
+    day: "Monday-Thursday",
+  },
 ];
 
 export default function Page() {
@@ -69,7 +74,7 @@ export default function Page() {
 
       <div className="border-3 border-dashed border-[#FF00FF] p-4 inline-block">
         <p className="text-lg font-bold rainbow-text inline">
-          don&apos;t forget your student ID for these rad deals!
+          don&apos;t forget to show your student ID for these rad deals!
         </p>
       </div>
 
