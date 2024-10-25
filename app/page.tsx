@@ -84,7 +84,7 @@ export default function Page() {
         </a>
       </div>
       <footer className="mt-12 text-sm">
-        <p>Made with ❤️ by Borna</p>
+        <p>Made with ❤️ by Borna | Last updated: 10/25/2024</p>
       </footer>
     </div>
   );
