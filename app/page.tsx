@@ -26,7 +26,12 @@ const initialDeals: Deal[] = [
     deal: "10% off pizza, wings, salads",
     day: "Everyday",
   },
-  { restaurant: "Blaze Pizza", deal: "$2 Coffee Refills", day: "Everyday" },
+  { restaurant: "Blaze Pizza", deal: "$1 Fountain Drink", day: "Everyday" },
+  {
+    restaurant: "Mamma",
+    deal: "Free pizza when you purchase over $30 of food",
+    day: "Everyday",
+  },
 ];
 
 export default function Page() {
