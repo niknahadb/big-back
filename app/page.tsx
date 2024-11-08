@@ -36,6 +36,11 @@ const initialDeals: Deal[] = [
     deal: "$9 lunch special (includes mini pizza, salad or fries, and fountain drink)",
     day: "Monday-Thursday",
   },
+  {
+    restaurant: "Blaze Pizza",
+    deal: "Buy a pizza, get the second one for $2.99",
+    day: "Everyday",
+  },
 ];
 
 export default function Page() {
@@ -74,7 +79,7 @@ export default function Page() {
 
       <div className="border-3 border-dashed border-[#FF00FF] p-4 inline-block">
         <p className="text-lg font-bold rainbow-text inline">
-          don&apos;t forget to show your student ID for these rad deals!
+          don&apos;t forget your student ID for these rad deals!
         </p>
       </div>
 
@@ -89,7 +94,7 @@ export default function Page() {
         </a>
       </div>
       <footer className="mt-12 text-sm">
-        <p>Made with ❤️ by Borna | Last updated: 10/25/2024</p>
+        <p>Made with ❤️ by Borna | Last updated: 11/07/2024</p>
       </footer>
     </div>
   );
